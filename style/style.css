@@ -5,7 +5,9 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+/* body{
+    position: relative;
+} */
 header{
     width: 100%;
     height: 94px;
@@ -20,7 +22,7 @@ header h1{
     height: 70px;
     background-size: 100%;
     background-image: url(../img/music-note.png);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     float: left;
     text-indent: -999999px;
     /* margin: 168px; */
@@ -40,14 +42,19 @@ header li{
     float: left;
     margin-right: 20px;
 }
-
-/* a:visited{
+li a{
+    color: #ffffff;
+}
+/* li a:visited{
     color: #f0bb0b
 } */
 
 main{
     /* padding: 94px; */
-    padding: 144px 154px 100px 110px;
+    padding-top: 144px;
+    width: 100%;
+    height: 1500px;
+    padding-left: 100px;
 }
 
 h2{
@@ -55,27 +62,62 @@ h2{
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
+
+    /* სოციალური ქსელების ლინკები */
+.social{
+    width: 50px;
+    height: 100px;
+
+    position:fixed;
+    top: 212px;
+    right: 0;
+    z-index: 2;
+    /* background-color: aqua; */
+}
+.social .facebook, .social .instagram{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.social .facebook img, .social .instagram img{
+    width: 100%;
+}
+
+     /* მუსიკის თრექები */
 article{
     width: 300px;
     height: 270px;
     margin-top: 50px;
-    background-color: aqua;
-
+    /* background-color: aqua; */
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 22px;
 }
+
 article section{
     width: 100%;
     margin-top: 0;
     height: 244px;
-    border: 1px solid #000000;
     position: relative;
+    border: 1px solid #000000;
+    background-image: url(../img/sound.png);
+    background-repeat: repeat-x;
+    background-size: 25%;
+    /* background-color: #07cf22; */
+    background-position-y: 58px;
+    
 }
-article section .like{
+article section div{
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top:0;
+    right:0;
+    background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     border: 1px dashed #000000;
+
 }
 
 article section h3{
@@ -101,19 +143,35 @@ article p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* footer{
+footer{
     width: 100%;
     height: 354px;
     background-color: #000000;
-    margin-bottom: 0;
-} */
+    padding-top: 26px;
+}
+
+footer div{
+    width: 150px;
+    height: 150px;
+   margin: 0px auto;
+}
+
+footer img{
+    width: 100%;
+    height: 100%;
+}
+footer ul{
+    width: 100px;
+    height: 64px;
+    margin: 26px auto;
+}
+footer li, footer p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+footer p{
+    color: #ffffff;
+    margin-top: 50px;
+   
+}
